@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Foo app - List of foos</title>
+</head>
+<body>
+<h1>Foo app - List of foos</h1>
+<ul>
+ <% foos.forEach(function(item) { %>
+        <li>
+          <b><%= item.name %></b>, height: <%= item.height %> 
+        </li>
+      <% }); %>
+</ul>
+<!-- <ul>
+  <li>
+    <b>Big Big Foo</b>, height: 303cm
+  </li>
+  <li>
+    <b>Lil Foo</b>, height: 25cm
+  </li>
+</ul> -->
+<hr />
+<p>Click <a href="/index.html">here</a> to go back to the home page.</p>
+</html>
